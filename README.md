@@ -11,7 +11,7 @@
 * Visual Studio Code v1.108.2
 * GNU Radio v3.10.9.2 (Python 3.12.3)
 ### Железо
-* Приемник [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
+* Приемник [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/) с прошивкой [FW 2.40](https://drive.google.com/drive/u/0/folders/1JDsT4t-Jco0wV7BmWuLnzKwpz76EqyX4)
 
 ## [Смотреть детали](grc/README.md) 
 
