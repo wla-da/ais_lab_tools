@@ -106,10 +106,37 @@ done
 sudo fuser -v /dev/snd/controlC3 /dev/snd/pcmC3*
 ```
 
-Для любителей глубоко заглянуть во внутренности можно выполнить команду:
+Для любителей глубоко заглянуть во внутренности можно выполнить команду при подключенном через USB Малахите, сам Малахит должен быть включен:
 ```bash
-sudo fuser -v /dev/snd/controlC3 /dev/snd/pcmC3*
+lsusb
+....
+Bus 001 Device 012: ID ffff:0737 MicroGenSF Malahit reciever
+....
 ```
+и далее, детально для найденного выше устройства в формате vendor id=0xffff, product id=0x0737:
+```bash
+sudo lsusb -d ffff:0737 -v
+
+Bus 001 Device 012: ID ffff:0737 MicroGenSF Malahit reciever
+Device Descriptor:
+  bLength                18
+  bDescriptorType         1
+  bcdUSB               2.00
+  bDeviceClass          239 Miscellaneous Device
+  bDeviceSubClass         2 [unknown]
+  bDeviceProtocol         1 Interface Association
+  bMaxPacketSize0        64
+  idVendor           0xffff MicroGenSF
+  idProduct          0x0737 Malahit reciever
+  bcdDevice            1.06
+  iManufacturer           1 MicroGenSF
+  iProduct                2 Malahit reciever
+  iSerial                 3  6$
+  bNumConfigurations      1
+....
+
+```
+
 
 ### 2. Запись IQ сигнала с помощью [GRC (GNU Radio)](https://www.gnuradio.org/)
 Собираем простейший пайплайн в GRC из двух компонент (блоков): 
@@ -148,7 +175,7 @@ Append to existing file: No
 
 В других SDR программах, таких как [SDR++](https://github.com/AlexandreRouma/SDRPlusPlus) v1.2.1 или [Gqrx](https://gqrx.dk/) v2.17.4 результаты были скромнее, чем в Cubic SDR: где то отображался сигнал, где то работало управление частотой Малахита, но запись не шла.
 
-В [SDRAngel](https://www.sdrangel.org/) (на начало 2026 не работает без VPN) v7.22.10 я анализировал уже записанный ранее в файл AIS сигнал. В SDRAngel есть предустановленный информативный плагин AIS-decoder. Подробнее о настройке SDRAngel для декодирования сигналов AIS можно почитать в [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
+В [SDRAngel](https://www.sdrangel.org/) (на начало 2026 сайт не работает без VPN) v7.22.10 я анализировал уже записанный ранее в файл AIS сигнал. В SDRAngel есть предустановленный информативный плагин AIS-decoder. Подробнее о настройке SDRAngel для декодирования сигналов AIS можно почитать в [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
 
 Записывать в SDRAngel напрямую с Малахита не пробовал, уже стабильно работали описанные выше способы захвата IQ сигнала.
 
@@ -159,4 +186,7 @@ Append to existing file: No
 Для управления Малахитом с компьютера: установка частоты, громкости и тп можно воспользоваться библиотекой [HamLib](https://github.com/Hamlib/Hamlib) с запуском локального rig-сервиса. HamLib поддерживает Малахит (2049 - это номер поддерживаемого устройства для Малахита, вывод всех устройств `rigctl -l`), но это уже другая история.
 
 ## Полезные ссылки
-
+1. [Обновление прошивки Малахита от разработчика](https://www.youtube.com/watch?v=3RMuSRu4kuA)
+1. [USB и CAT подключения для Малахит от разработчика Малахита (только Windows)](https://www.youtube.com/watch?v=ePji1m4968Y)  
+1. [Управление трансивером в Linux](https://ra1ahq.blog/upravlenie-transiverom-v-linux)
+1. [Список GUI оболочек для HamLib](https://github.com/Hamlib/Hamlib/wiki/Applications-and-Screen-Shots)
