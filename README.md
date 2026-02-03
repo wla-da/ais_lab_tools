@@ -11,9 +11,9 @@
 * Visual Studio Code v1.108.2
 * GNU Radio v3.10.9.2 (Python 3.12.3)
 ### Железо
-* [Приемник Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
+* Приемник [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
 
-
+## [Смотреть детали](grc/README.md) 
 
 ## Полезные ссылки
 1. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
