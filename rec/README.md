@@ -165,7 +165,7 @@ Append to existing file: No
 
 Чтобы выключить/включить компонент в пайплайне достаточно выделить его и нажать d/e (disable/enable) на клавиатуре.
 
-Готовый пайплан длч GRC v3.10.9.2 (Python 3.12.3) [тут](src/read_malahit_copy.grc)
+Готовый пайплан для GRC v3.10.9.2 (Python 3.12.3) [тут](src/read_malahit_copy.grc)
 
 
 ### 3. Запись IQ сигнала с помощью SDR программ 

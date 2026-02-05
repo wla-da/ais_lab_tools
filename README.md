@@ -14,8 +14,8 @@
 * Приемник [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/) с прошивкой [FW 2.40](https://drive.google.com/drive/u/0/folders/1JDsT4t-Jco0wV7BmWuLnzKwpz76EqyX4)
 
 ## Смотреть детали
-1. [Запись](rec/README.md) с [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
-2. [Декодирование AIS сигнала](demod/README.md) в [GRC](https://www.gnuradio.org/)) на базе стандартных компонент (блоков)
+1. [Запись IQ сигнала](rec/README.md) с помощью приемника [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
+2. [Извлечение AIS пакета](demod/README.md) в [GRC](https://www.gnuradio.org/) на базе стандартных компонент (блоков)
 
 ## Полезные ссылки
 1. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
