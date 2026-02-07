@@ -236,4 +236,5 @@
 7. [AIS on SDR](https://github.com/freerange/ais-on-sdr)
 8. [Описание протокола AIS](https://gpsd.gitlab.io/gpsd/AIVDM.html)
 9. [Создание приемника FM на RTL-SDR с помощью GNU Radio Companion](http://microsin.net/adminstuff/others/rtl-sdr-fm-radio-receiver-with-gnu-radio-companion.html)
-10. Онлайн калькулятор CRC [один](https://crccalc.com/?crc=123456789&method=CRC-16&datatype=ascii&outtype=hex) и [второй](https://www.sunshine2k.de/coding/javascript/crc/crc_js.html)
+10. [Как собрать собственный SDR-приёмник в GnuRadio без паяльника](https://habr.com/ru/companies/first/articles/978992/)
+11. Онлайн калькулятор CRC [один](https://crccalc.com/?crc=123456789&method=CRC-16&datatype=ascii&outtype=hex) и [второй](https://www.sunshine2k.de/coding/javascript/crc/crc_js.html)

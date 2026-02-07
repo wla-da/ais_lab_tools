@@ -20,10 +20,11 @@
 
 ## Полезные ссылки
 1. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
-1. [SDR — как это работает? Часть 1](https://habr.com/ru/articles/451674/)
-1. [SDR — как это работает? Часть 2](https://habr.com/ru/articles/452036/)
-1. [SDR — как это работает? Часть 3](https://habr.com/ru/articles/452390/)
-1. [SDR — как это работает? Часть 4](https://habr.com/ru/articles/452390/)
-1. [SDR — как это работает? Часть 5](https://habr.com/ru/articles/453454/)
-1. [SDR — как это работает? Часть 6](https://habr.com/ru/articles/453766/)
+2. [В помощь радиолюбителю: принимаем сигналы AIS морских судов](https://habr.com/ru/companies/ru_mts/articles/820177/). Описаны пайплайны для Windows и Linux для приема и декодирования AIS сигналов судов с отображением на карте
+3. [SDR — как это работает? Часть 1](https://habr.com/ru/articles/451674/)
+4. [SDR — как это работает? Часть 2](https://habr.com/ru/articles/452036/)
+5. [SDR — как это работает? Часть 3](https://habr.com/ru/articles/452390/)
+6. [SDR — как это работает? Часть 4](https://habr.com/ru/articles/452390/)
+7. [SDR — как это работает? Часть 5](https://habr.com/ru/articles/453454/)
+8. [SDR — как это работает? Часть 6](https://habr.com/ru/articles/453766/)
 
