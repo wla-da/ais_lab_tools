@@ -228,9 +228,10 @@
 
 ## Полезные ссылки
 1. [Wiki AIS](https://ru.wikipedia.org/wiki/Автоматическая_идентификационная_система)
-1. [Wiki GNU Radio](https://wiki.gnuradio.org)
-1. [А. Игонин. GNURadio - SDR конструктор. Часть 1. Введение.](https://rutube.ru/video/8f4760a4d8630b4b73eb5d25046c898b/)
-1. [А. Игонин. GNURadio - SDR конструктор. Часть 2. Первые эксперименты. Источники и получатели. Азы ЦОС.](https://rutube.ru/video/968ad4fe1f2159cf28c94a69d1d6accf/)
-1. [А. Игонин. GNURadio - SDR конструктор. Часть 3. Простейший FM SDR приёмник. Азы ЦОС.](https://rutube.ru/video/df18d07b107452f7da7465d120940f4e/)
-1. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
-1. Онлайн калькулятор CRC [один](https://crccalc.com/?crc=123456789&method=CRC-16&datatype=ascii&outtype=hex) и [второй](https://www.sunshine2k.de/coding/javascript/crc/crc_js.html)
+2. [Wiki GNU Radio](https://wiki.gnuradio.org)
+3. [А. Игонин. GNURadio - SDR конструктор. Часть 1. Введение.](https://rutube.ru/video/8f4760a4d8630b4b73eb5d25046c898b/)
+4. [А. Игонин. GNURadio - SDR конструктор. Часть 2. Первые эксперименты. Источники и получатели. Азы ЦОС.](https://rutube.ru/video/968ad4fe1f2159cf28c94a69d1d6accf/)
+5. [А. Игонин. GNURadio - SDR конструктор. Часть 3. Простейший FM SDR приёмник. Азы ЦОС.](https://rutube.ru/video/df18d07b107452f7da7465d120940f4e/)
+6. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
+7. [Создание приемника FM на RTL-SDR с помощью GNU Radio Companion](http://microsin.net/adminstuff/others/rtl-sdr-fm-radio-receiver-with-gnu-radio-companion.html)
+8. Онлайн калькулятор CRC [один](https://crccalc.com/?crc=123456789&method=CRC-16&datatype=ascii&outtype=hex) и [второй](https://www.sunshine2k.de/coding/javascript/crc/crc_js.html)
