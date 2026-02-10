@@ -61,8 +61,23 @@
 и видим неизвестный китайский микроконтроллер L110C4UA: 
 ![L110C4UA](img/ET32_170T30D_MCU.png)
 
-Опознать чип по маркировке L110C4UA могучие LLM не смогли, но Google отлично справился и мы понимаем, что это [HC32L110C4UA](datascheet/HC32L110SeriesDatasheet_Rev2.70.pdf) китайский 32-битный ARM® Cortex от [Xiaohua Semiconductor](https://www.xhsc.com.cn).
+Опознать чип по маркировке L110C4UA могучие LLM не смогли, но Google отлично справился и мы понимаем, что это [HC32L110C4UA](datascheet/HC32L110SeriesDatasheet_Rev2.70.pdf) китайский 32-битный ARM® Cortex от [Xiaohua Semiconductor](https://www.xhsc.com.cn). Прошивки для данного MCU и плат E-byte можно посмотреть у [PenguinLRS](https://github.com/Penguin096/PenguinLRS)
+
+Обдумав варианты, решил сначала отладить гибрид - подключить плату XL1278-SMT к ESP32 и научиться конфигурировать радиочип SX1278 из ESP32: 
+1) это не требует аппаратных переделок плат 
+2) esp32 мне знаком, не раз уже программировал под разные задачи 
+3) разбираться одновременно и с новым для меня MCU HC32L110C4UA (как показал быстрый обзор MCU без особой документации, готовых тулчейнов под знакомые мне инструменты аля VS Code&Platformio нет) и с радиочипом SX1278 мне будет достаточно сложно
+
+Наиболее перспективными библиотеками для управления SX127x из ESP32 мне показались две:
+1) библиотека [RadioLib](https://github.com/jgromes/RadioLib) драйверов для различных радиочипов, включая SX1278, под разные платформы, включая esp3. Заточена под Arduino, но есть примеры и [под ESP-IDF](https://github.com/jgromes/RadioLib/tree/master/examples/NonArduino/ESP-IDF)
+2) библиотека [SX127x под ESP-IDF](https://components.espressif.com/components/dernasherbrezon/sx127x/versions/5.0.1/readme) от dernasherbrezon с полным контролем управляющих регистров
+   
+Разумеется, есть и другие библиотеки для SX127x, но они или "заточены" под LoRa (а мне нужен GMSK) или только под Arduino (как программный фреймворк, а не плату как таковую) либо хуже "дружат" с ESP32. Либо я их не нашёл.    
+
 
 ## Полезные ссылки
 1. [AIS приемник](https://san.net.ru/ais/receiver.html) Андрея Сычева на базе платы E30 170T20D (радиочип SI4463)
 2. [AIS приемник](https://github.com/IDeTIC-AIS/RX-AIS) на базе радиочипа [Radiometrix RX1](https://www.radiometrix.com/product/rx1/)
+3. [Github проект прошивки HC32L110 от PenguinLRS](https://github.com/Penguin096/PenguinLRS)
+4. [Библиотека RadioLib драйверов различных радиочипов, включая SX1278, для разных платформ, включая esp3](https://github.com/jgromes/RadioLib)
+5. [Библиотека SX127x под ESP-IDF от dernasherbrezon](https://components.espressif.com/components/dernasherbrezon/sx127x/versions/5.0.1/readme)
