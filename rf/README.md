@@ -73,7 +73,7 @@
 1) библиотека [RadioLib](https://github.com/jgromes/RadioLib) драйверов для различных радиочипов, включая SX1278, под разные платформы, включая esp3. Заточена под Arduino, но есть примеры и [под ESP-IDF](https://github.com/jgromes/RadioLib/tree/master/examples/NonArduino/ESP-IDF)
 2) библиотека [SX127x под ESP-IDF](https://components.espressif.com/components/dernasherbrezon/sx127x/versions/5.0.1/readme) от dernasherbrezon с полным контролем управляющих регистров
    
-Разумеется, есть и другие библиотеки для SX127x, но они или "заточены" под LoRa (а мне нужен GMSK), как, например, драйвера от производителя [SX127x Semtech](https://github.com/Lora-net/SWL2001/tree/master) или только под Arduino (как программный фреймворк, а не плату как таковую) либо хуже "дружат" с ESP32. Либо я их не нашёл.    
+Разумеется, есть и другие библиотеки для SX127x, но они или "заточены" под LoRa (а мне нужен GMSK), как, например, драйвера от производителя [SX127x Semtech](https://github.com/Lora-net/SWSD004/tree/master/lora_basics_modem/lora_basics_modem/lbm_lib/smtc_modem_core/radio_drivers/sx127x_driver) или только под Arduino (как программный фреймворк, а не плату как таковую) либо хуже "дружат" с ESP32. Либо я их не нашёл.    
 
 
 ## Полезные ссылки
@@ -82,3 +82,4 @@
 3. [Github проект прошивки HC32L110 от PenguinLRS](https://github.com/Penguin096/PenguinLRS)
 4. [Библиотека RadioLib драйверов различных радиочипов, включая SX1278, для разных платформ, включая esp3](https://github.com/jgromes/RadioLib)
 5. [Библиотека SX127x под ESP-IDF от dernasherbrezon](https://components.espressif.com/components/dernasherbrezon/sx127x/versions/5.0.1/readme)
+6. [Официальные драйвера SX127x от Semtech](https://github.com/Lora-net/SWSD004/tree/master/lora_basics_modem/lora_basics_modem/lbm_lib/smtc_modem_core/radio_drivers/sx127x_driver)
