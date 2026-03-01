@@ -69,6 +69,8 @@
 3) на базе XL1278-SMT можно сделать передатчик, который в будущем поможет отладить работу платы ET32 170T30D с MCU HC32L110C4UA
 4) разбираться одновременно и с новым для меня MCU HC32L110C4UA (как показал быстрый обзор MCU без особой документации, готовых тулчейнов под знакомые мне инструменты аля VS Code&Platformio нет) и с радиочипом SX1278 мне будет достаточно сложно
 
+Посмотреть, что получилось можно [здесь](https://github.com/wla-da/esp32_xl1278).
+
 Наиболее перспективными библиотеками для управления SX127x из ESP32 мне показались две:
 1) библиотека [RadioLib](https://github.com/jgromes/RadioLib) драйверов для различных радиочипов, включая SX1278, под разные платформы, включая esp3. Заточена под Arduino, но есть примеры и [под ESP-IDF](https://github.com/jgromes/RadioLib/tree/master/examples/NonArduino/ESP-IDF)
 2) библиотека [SX127x под ESP-IDF](https://components.espressif.com/components/dernasherbrezon/sx127x/versions/5.0.1/readme) от dernasherbrezon с полным контролем управляющих регистров
