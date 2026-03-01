@@ -55,7 +55,7 @@
 
 
 ### Общие свойства передачи AIS
-* Физический уровень: два канала 161,975 МГц и 162,025 МГц, модуляця GMSK с BT=0,5, битрейт 9600 бит/с, девиация частоты 2,4 кГц = 0,5*9600/2, длительность пакета ~26 мс
+* Физический уровень: два канала 161,975 МГц и 162,025 МГц, модуляця GMSK, индекс модуляции h=0,5 с BT=0,4 (произведение ширины полосы пропускания фильтра Гаусса на длительность одного бита), битрейт R=9600 бит/с, девиация частоты 2,4 кГц = h*R/2, длительность пакета ~26 мс
 * Линейное кодирование: [NRZI](https://ru.wikipedia.org/wiki/NRZI)
 * Порядок передачи бит: LSB-first
 * Обнаружение кадров: [HDLC-подобное фреймирование](https://ciscotips.ru/hdlc) флагом 0х7E
@@ -238,3 +238,4 @@
 9. [Создание приемника FM на RTL-SDR с помощью GNU Radio Companion](http://microsin.net/adminstuff/others/rtl-sdr-fm-radio-receiver-with-gnu-radio-companion.html)
 10. [Как собрать собственный SDR-приёмник в GnuRadio без паяльника](https://habr.com/ru/companies/first/articles/978992/)
 11. Онлайн калькулятор CRC [один](https://crccalc.com/?crc=123456789&method=CRC-16&datatype=ascii&outtype=hex) и [второй](https://www.sunshine2k.de/coding/javascript/crc/crc_js.html)
+12. Техническая спецификация AIS [ITU-R M.1371-1](https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1371-1-200108-S!!PDF-E.pdf)
