@@ -17,6 +17,7 @@
 1. [Запись IQ сигнала](rec/README.md) с помощью приемника [Малахит DSP3](https://malahiteam.com/product/priemnik-malahit-dsp3/)
 2. [Извлечение AIS пакета](demod/README.md) в [GRC](https://www.gnuradio.org/) на базе стандартных компонент (блоков)
 3. [Эксперименты с радиомодулями](rf/README.md) для приемника AIS
+     * Генератор AIS подобного сигнала на базе [ESP32+XL1278](https://github.com/wla-da/esp32_xl1278) (радиочип [SX1278](https://github.com/wla-da/ais_lab_tools/blob/main/rf/datascheet/SX1278.pdf)) 
 
 ## Полезные ссылки
 1. [Перехватываем и разбираем сигнал AIS](https://xakep.ru/2024/09/12/decoding-ais/)
