@@ -29,6 +29,8 @@
 
 Есть ещё неплохой по характеристикам чип [Radiometrix NRX1](https://www.radiometrix.com/product/nrx1) и [Radiometrix RX1](https://www.radiometrix.com/product/rx1/), но в них нет аппаратной GMSK демодуляции, а добавлять еще модули или делать программную демодуляцию GMSK не очень хочется.
 
+Есть готовые специализированные чип-приемники AIS типа [GNS5851](datascheet/GNS5851-AIS-receiver-datasheet_0.91.pdf) с неплохой заявленной чувствительностью до -117 дБм. Но достать их в РФ сейчас затруднительно и они достаточно [дорогие](https://www.gns-electronics.de/product/gns-5851-ais-module/). 
+
 Есть интересная линейка чипов [AX5043](https://www.onsemi.com/download/data-sheet/pdf/ax5043-d.pdf), [AX5243](https://www.onsemi.com/download/data-sheet/pdf/ax5243-d.pdf), [AX8052](https://www.onsemi.com/download/data-sheet/pdf/ax8052f143-d.pdf) от [Onsemi](https://www.onsemi.com/) с хорошей чувствительностью, нужным частотным диапазоном и GMSK демодулятором, но готовых плат/модулей на их основе мне найти не удалось.
 
 На базе платы E30 170T20D с радиочипом [SI4463](https://www.silabs.com/documents/public/data-sheets/Si4463-61-60-C.pdf) от Silicon Laboratories [AIS приемник](https://san.net.ru/ais/receiver.html) сделал [Андрей Сычев](https://san.net.ru/index.php) и даже поделился [прошивкой MCU](https://san.net.ru/ais/receiver-add.html). Андрей в своей статье написал, что не особо доволен чувствительностью приемника. На этом же радиочипе SI4463 построена плата [RF4463PRO](https://ru.nicerf.com/fsk-front-end-module/868mhz-rf-module-rf4463pro.html), выпускается на разные диапазоны, но найти доступную плату на 150 МГц не получилось.
